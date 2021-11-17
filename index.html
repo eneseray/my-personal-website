@@ -883,82 +883,7 @@ color:gray;
       </div>
     </div>
     <div class='hidden-xs hidden-sm' id='main-sidebar'>
-      <div class='logo'>
-        <b:section class='header' id='headur' maxwidgets='1' showaddelement='no'>
-          <b:widget id='Header1' locked='true' title='Enes Eray (Üstbilgi)' type='Header' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='displayUrl'>https://1.bp.blogspot.com/-R6KwN2nNcKk/XhyjpY84ZCI/AAAAAAAADdI/FQlISL0u6xIylSIEMD_WBZY3ob0asVWBQCLcBGAsYHQ/s1600/eneseray.jpg</b:widget-setting>
-              <b:widget-setting name='displayHeight'>1080</b:widget-setting>
-              <b:widget-setting name='sectionWidth'>710</b:widget-setting>
-              <b:widget-setting name='useImage'>true</b:widget-setting>
-              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-              <b:widget-setting name='imagePlacement'>BEFORE_DESCRIPTION</b:widget-setting>
-              <b:widget-setting name='displayWidth'>1080</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-              <b:if cond='data:useImage'>
-                <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-                  <!--
-Show image as background to text. You can't really calculate the width
-reliably in JS because margins are not taken into account by any of
-clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
-width if the user is using shrink to fit.
-This results in a margin-width's worth of pixels being cropped. If the
-user is not using shrink to fit then we expand the header.
--->
-                  <b:if cond='data:mobile'>
-                    <div id='header-inner'>
-                      <div class='titlewrapper' style='background: transparent'>
-                        <h1 class='title' style='background: transparent; border-width: 0px'>
-                          <b:include name='title'/>
-                        </h1>
-                      </div>
-                   
-                    </div>
-                  </b:if>
-                  <b:else/>
-                  <!--Show the image only-->
-                  <div id='header-inner'>
-                    <a expr:href='data:blog.homepageUrl' style='display: block'>
-                      <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
-                    </a>
-                    <!--Show the description-->
-                    <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
-                      <b:include name='description'/>
-                    </b:if>
-                  </div>
-                </b:if>
-                <b:else/>
-                <!--No header image -->
-                <div id='header-inner'>
-                  <div class='titlewrapper'>
-                    <h1 class='title'>
-                      <b:include name='title'/>
-                    </h1>
-                  </div>
-                  <b:include name='description'/>
-                </div>
-              </b:if>
-            </b:includable>
-            <b:includable id='description'>
-              <div class=''>
-                <p class=''>
-               
-                </p>
-              </div>
-            </b:includable>
-            <b:includable id='title'>
-              <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                <data:title/>
-                <b:else/>
-                <a expr:href='data:blog.homepageUrl'>
-                  <data:title/>
-                </a>
-              </b:if>
-            </b:includable>
-          </b:widget>
-        </b:section>
-      </div>
+     
       <!--Sidebar Responsive Menu-->
       <div class='navigation'>
         <ul class='main-menu'>
@@ -1047,7 +972,7 @@ user is not using shrink to fit then we expand the header.
 
               <div class='col-md-4'>
                 <div class='wrp'>
-                  <img src='https://2.bp.blogspot.com/-sAoM5_colaY/Wruq0f7IH1I/AAAAAAAAAHc/fnb05OovlrAG-kwvWCacBsMLsEKGc2COwCKgBGAs/s1600/enes-eray.jpeg' style='width: 100%;'/>
+                  <img src='https://1.bp.blogspot.com/-R6KwN2nNcKk/XhyjpY84ZCI/AAAAAAAADdI/FQlISL0u6xIylSIEMD_WBZY3ob0asVWBQCLcBGAsYHQ/s1600/eneseray.jpg' style='width: 100%;'/>
 
                   <h3 class='name'>
                     Enes Eray
