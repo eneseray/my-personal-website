@@ -999,20 +999,7 @@ color:gray;
           <div class='clear'/>
         </b:if>
         <div class='section-content' id='blog'>
-          <b:if cond='data:blog.url == data:blog.homepageUrl'>
-            <div class='row'>
-              <div class='col-md-12'>
-                <div class='section-title'>
-                  <h2>
-                    Blog
-                  </h2>
-                  <span>
-                   
-                  </span>
-                </div>
-              </div>
-            </div>
-          </b:if>
+         
           <div id='blog'>
             <b:section class='main' id='main' showaddelement='yes'>
               <b:widget id='Blog1' locked='true' title='Blog Kayıtları' type='Blog' version='1'>
@@ -1077,57 +1064,8 @@ color:gray;
                   </b:if>
                   <!-- custom error page ends -->
                   <b:if cond='data:mobile == &quot;false&quot;'>
-                    <div class='blog-posts hfeed'>
-                      <b:include data='top' name='status-message'/>
-                      <data:defaultAdStart/>
-                      <b:loop values='data:posts' var='post'>
-                        <b:if cond='data:post.isDateStart'>
-                          <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
-                            &lt;/div&gt;&lt;/div&gt;
-                          </b:if>
-                        </b:if>
-                        <b:if cond='data:post.isDateStart'>
-                          &lt;div class=&quot;date-outer&quot;&gt;
-                        </b:if>
-                        <b:if cond='data:post.dateHeader'>
-                        </b:if>
-                        <b:if cond='data:post.isDateStart'>
-                          &lt;div class=&quot;date-posts&quot;&gt;
-                        </b:if>
-                        <div class='post-outer'>
-                          <b:include data='post' name='post'/>
-                          <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-                            <b:if cond='data:post.showThreadedComments'>
-                              <b:include data='post' name='threaded_comments'/>
-                              <b:else/>
-                              <b:include data='post' name='comments'/>
-                            </b:if>
-                          </b:if>
-                          <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                            <b:if cond='data:post.showThreadedComments'>
-                              <b:include data='post' name='threaded_comments'/>
-                              <b:else/>
-                              <b:include data='post' name='comments'/>
-                            </b:if>
-                          </b:if>
-                        </div>
-                        <b:if cond='data:post.includeAd'>
-                          <b:if cond='data:post.isFirstPost'>
-                            <data:defaultAdEnd/>
-                            <b:else/>
-                            <data:adEnd/>
-                          </b:if>
-                          <div class='inline-ad'>
-                            <data:adCode/>
-                          </div>
-                          <data:adStart/>
-                        </b:if>
-                      </b:loop>
-                      <b:if cond='data:numPosts != 0'>
-                        &lt;/div&gt;&lt;/div&gt;
-                      </b:if>
-                      <data:adEnd/>
-                    </div>
+                    
+                      
                     <div class='clear'/>
                     <!-- navigation -->
                     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
