@@ -482,16 +482,6 @@ li.blog a { border-color: #38e395; }
 li.blog a.active { color: #38e395; }
 li.contact a { border-color: #e3387c; }
 li.contact a.active { color: #e3387c; }
-a.menu-toggle-btn {
-background-color: #ff0000;
-color: white;
-display: block;
-height: 60px;
-line-height: 60px;
-text-align: center;
-width: 100%;
-}
-a.menu-toggle-btn i { line-height: 60px; }
 .responsive-navigation { position: relative; width: 100%; display: block; z-index: 9999; }
 .responsive-menu { display: none; background-color: #495054; }
 .responsive-menu ul li a {
@@ -870,14 +860,6 @@ color:gray;
       }());
       //]]>
     </script>
-    <div class='responsive-navigation visible-sm visible-xs'>
-      <a class='menu-toggle-btn' href='#'>
-        <i class='fa fa-bars fa-2x'/>
-      </a>
-      <div class='navigation responsive-menu'>
-        <!-- space for responsiv nav links -->
-      </div>
-    </div>
 
     <div class='first-footer' style='padding-top:50px'>
       <div class='social-footer'>
@@ -889,9 +871,6 @@ color:gray;
       </ul>
     </div>
    </div>
-
-
-   
 
     <div id='main-content'>
       <b:if cond='data:blog.url == data:blog.homepageUrl'>
