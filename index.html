@@ -122,7 +122,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'/>  
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'/>
-    <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.4.8' type='text/css' media='all' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8' id='google-fonts-1-css' media='all' rel='stylesheet' type='text/css'/>
 
     <b:skin><![CDATA[
       
@@ -588,8 +588,22 @@ padding: 0 7%;
 text-align: left;
 font-size:18px;
 }
-.first-footer .social-footer ul li { display: inline; padding: 10px;}
-.first-footer .social-footer ul li a {font-family: Poppins; text-align: center; line-height: 18px; color: black; }
+.social-text-bottom {
+  position: relative; /* important for absolute child to work */
+  font-weight: normal;
+  padding: 0 0 1em;
+  text-align: left;
+}
+.social-text-bottom::before {
+  content:'';
+  position: absolute;
+  background-color: #030303;
+  width: 25%;
+  height: 2px;
+  bottom: 0;
+}
+.first-footer .social-footer ul li {display: inline; padding: 10px;}
+.first-footer .social-footer ul li a {font-family: Poppins; text-align: center; line-height: 18px; color: black; padding-bottom: 5px;}
 #keeptzy{color:#000;}
 .bottom-footer a { color:#000; }
 .bottom-footer .credits { text-align: right; }
@@ -864,10 +878,10 @@ color:gray;
     <div class='first-footer' style='padding-top:50px'>
       <div class='social-footer'>
       <ul>
-        <li><a href="http://www.instagram.com/enes.eray" target="_blank">Instagram</a></li>
-        <li><a href="https://twitter.com/enes_eraay" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/enes-eray" target="_blank">Linkedin</a></li>
-        <li><a href="https://eneseray.medium.com/" target="_blank">Medium</a></li>
+        <li><a class='social-text-bottom' href='http://www.instagram.com/enes.eray' target='_blank'>Instagram</a></li>
+        <li><a class='social-text-bottom' href='https://twitter.com/enes_eraay' target='_blank'>Twitter</a></li>
+        <li><a class='social-text-bottom' href='https://www.linkedin.com/in/enes-eray' target='_blank'>Linkedin</a></li>
+        <li><a class='social-text-bottom' href='https://eneseray.medium.com/' target='_blank'>Medium</a></li>
       </ul>
     </div>
    </div>
@@ -885,17 +899,21 @@ color:gray;
             <div class='row'>
               <div class='col-md-8'>
                 <p style='font-family: Poppins; font-size:20px; margin-top: 70px;'>
-                Merhabalar! Ben Enes, 21 yaşındayım Ankara&#39;da yaşıyorum. 
+                  Merhabalar! Ben Enes.  
 					<br>
                 </br>
-                  Yazılıma ilk olarak ortaokulda C++ ile başladım. Daha sonra kendimi sürekli geliştirerek  C#&#39;la devam ettim ve şu anda Android uygulamalar geliştiriyorum. Geliştirdiğim uygulamaları <a href='https://appsmintegra.com' target='_blank'>Mintegra Apps</a> adı altında yayınlıyorum.
-				<br>
+                Küçük yaştan beri yazılım geliştiriyorum. C++ ile başladığım bu serüven mobil uygulama geliştirmeyle devam ediyor. Java ile Android, SwiftUI ile iOS uygulamaları geliştiriyorum. 5 yıl süren mobil geliştiriciliğini 2 yıldır freelance olarak yapıyorum. 				
+                <br>
                   	</br>
-					Öğrenmeyi ve bunu sürekli hale getirerek hayatıma entegre etmeyi seviyorum. Gelişim halinde olarak ekosistemi takip etmek, bu alanda hep daha iyi olmak için çalışmaya ve çabalamaya her zaman devam edeceğim.
-
+                    Aynı zamanda bağımsız olarak küçük ekibimiz ile kendi mobil uygulamalarımızı geliştiriyoruz. 
+                    <br>
+                  	</br>
+                    Bana enes@eneseray.com e-posta adresi üzerinden ulaşabilirsiniz.
+                  <p style='font-family: Poppins; font-size:20px; margin-top: 70px; color:#dba93d'>
+                  #freelance #indidev #minimalist #nomad
+                  </p>
                 </p>
               </div>
-
               <div class='col-md-4'>
                 <div class='wrp'>
                   <img src='https://blogger.googleusercontent.com/img/a/AVvXsEgGA1JwB3XPZiI2jVDgUhNO7ASwlioXPYVZ89xaGoYF4Y9u2r9yphbreFKEYt_mVd_TF37jD-AmBzM0EUPO0gWnDt1uMRI_O75woMorVZ8PEUQZS0o18J_bB3hzXQFUw2HKJ3QK8oO6M_sAyLRO0eoqIrP4Y71BUpm4a9wVvAnfAFFj6fHajev-cBrq_Q=s2048' style='width: 100%;'/>
@@ -903,7 +921,7 @@ color:gray;
                   <h3 class='name'>
                     Enes Eray
                     <span>
-                      Android Geliştirici
+                      Android&amp;iOS Geliştirici
                     </span>
                   </h3>
                 </div>
@@ -1982,7 +2000,7 @@ color:gray;
                   <label class='required' for='email-id' style='font-size: 15px;'>
                     E-Posta:
                   </label>
-                  <input class='contact-form-email' id='ContactForm1_contact-form-email' name='email' placeholder="E-posta" size='30' type='text'/>
+                  <input class='contact-form-email' id='ContactForm1_contact-form-email' name='email' placeholder='E-posta' size='30' type='text'/>
                 </div>
                 <!-- /.col-md-4 -->
                 <div class='col-md-4'>
