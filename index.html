@@ -507,6 +507,7 @@ background-color: #FFFFF;
 padding: 0 7%; 
 text-align: left;
 font-size:18px;
+padding-left: 0 !important;
 }
 .social-text-bottom {
   position: relative; /* important for absolute child to work */
@@ -523,7 +524,7 @@ font-size:18px;
   bottom: 0;
 }
 .first-footer .social-footer ul li {display: inline; padding: 10px;}
-.first-footer .social-footer ul li a {font-family: Poppins; text-align: center; line-height: 18px; color: black; padding-bottom: 5px;}
+.first-footer .social-footer ul li a {font-family: Poppins; text-align: cenleter; line-height: 18px; color: black; padding-bottom: 5px;}
 #keeptzy{color:#000;}
 .bottom-footer a { color:#000; }
 .bottom-footer .credits { text-align: right; }
@@ -748,16 +749,19 @@ font-size:18px;
       //]]>
     </script>
 
-    <div class='first-footer' style='padding-top:50px'>
-      <div class='social-footer'>
+    <div class='container'>
+    <div class='first-footer' style='padding-top:50px;'>
+      <div class='social-footer' style='padding-left:5px;'>
       <ul>
+        <li><a class='social-text-bottom' href='https://github.com/eneseray' target='_blank'>Github</a></li>
         <li><a class='social-text-bottom' href='http://www.instagram.com/enes.eray' target='_blank'>Instagram</a></li>
         <li><a class='social-text-bottom' href='https://twitter.com/enes_eraay' target='_blank'>Twitter</a></li>
         <li><a class='social-text-bottom' href='https://www.linkedin.com/in/enes-eray' target='_blank'>Linkedin</a></li>
         <li><a class='social-text-bottom' href='https://eneseray.medium.com/' target='_blank'>Medium</a></li>
       </ul>
-    </div>
    </div>
+  </div>
+  </div>
 
     <div id='main-content'>
       <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -769,8 +773,8 @@ font-size:18px;
           <div class='section-content' id='about'>
            
             <!-- Amdin Portfolio --> 
-            <div class='row'>
-              <div class='col-md-8'>
+            <div class='container'>
+              <div class='col-md-9'>
                 <p style='font-family: Poppins; font-size:21px; margin-top: 70px;'>
                   <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px;'>👋 Hey! It's Enes.</span>
 					<br>
@@ -782,16 +786,15 @@ font-size:18px;
                 
                     <br>
                   	</br>
-                    You can reach me at this mail address: <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>enes@eneseray.com</span>
+                    Also I am a <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>digital nomad</span>
+                    traveling to various countries while working on <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>indie</span> 
+                    digital products with a small team.
                     <br>
                   	</br>
-                    At the same time I'm a digital nomad. I travel to different countries and develop
-                  <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>digital products</span>.
-                  We also develop <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>indie</span> mobile applications with a small team.
-      
+                    You can contact me at <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>enes@eneseray.com</span>
                 </p>
               </div>
-              <div class='col-md-4' style="margin-top: 110px;">
+              <div class='col-md-3' style="margin-top: 100px;">
                 <div class='wrp'>
                   <img src='https://blogger.googleusercontent.com/img/a/AVvXsEgGA1JwB3XPZiI2jVDgUhNO7ASwlioXPYVZ89xaGoYF4Y9u2r9yphbreFKEYt_mVd_TF37jD-AmBzM0EUPO0gWnDt1uMRI_O75woMorVZ8PEUQZS0o18J_bB3hzXQFUw2HKJ3QK8oO6M_sAyLRO0eoqIrP4Y71BUpm4a9wVvAnfAFFj6fHajev-cBrq_Q=s2048' 
                   style='border-radius: 50%; width: 100%; max-width: 350px; height: 100%; max-height: 350px;'/>
