@@ -169,7 +169,7 @@ float: right;
 margin-top: 50px;
 width: 100%;
 }
-.section-content { padding: 0 7%; margin-bottom: 50px; }
+.section-content { padding: 0 6%; margin-bottom: 50px; }
 .section-title {
 border-top: 0px solid;
 margin-bottom: 40px;
@@ -612,7 +612,8 @@ padding-left: 0 !important;
       .photos-container {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 35px;
+        margin-bottom: 25px;
       }
 
       .photos-container img {
@@ -840,41 +841,11 @@ padding-left: 0 !important;
       margin-top: 20vh;
       background-color: #000;
       color: #fff;
+      font-family: Poppins;
       padding: 24px;
       border-radius: 20px;
     }
   </style>
-  <script type='text/javascript'>
-    //<![CDATA[
-    var relatedPostsNum = 3; //number of related post
-    var relatedmaxnum = 35; // summary length
-    summary_noimg = 550;// summary length when no image
-    summary_img = 10;// summary length with image
-    //summary
-    function removeHtmlTag(strx, chop) { if (strx.indexOf("<") != -1) { var s = strx.split("<"); for (var i = 0; i < s.length; i++) { if (s[i].indexOf(">") != -1) { s[i] = s[i].substring(s[i].indexOf(">") + 1, s[i].length) } } strx = s.join("") } chop = (chop < strx.length - 1) ? chop : strx.length - 2; while (strx.charAt(chop - 1) != " " && strx.indexOf(" ", chop) != -1) { chop++ } strx = strx.substring(0, chop - 1); return strx + "..." } function createSummaryAndThumb(pID) { var div = document.getElementById(pID); var imgtag = ""; var img = div.getElementsByTagName("img"); var summ = summary_noimg; if (img.length >= 1) { imgtag = ""; summ = summary_img } var summary = imgtag + "<div>" + removeHtmlTag(div.innerHTML, summ) + "</div>"; div.innerHTML = summary };
-    ///related posts
-    var relatedTitles = new Array(); var relatedUrls = new Array(); var relatedpSummary = new Array(); var relatedThumb = new Array(); var relatedTitlesNum = 0; var relatednoimage = ""; function readpostlabels(json) { var entry, postimg, postcontent, cat; for (var i = 0; i < json.feed.entry.length; i++) { entry = json.feed.entry[i]; if (i == json.feed.entry.length) { break } relatedTitles[relatedTitlesNum] = entry.title.$t; postcontent = ""; if ("content" in entry) { postcontent = entry.content.$t } else { if ("summary" in entry) { postcontent = entry.summary.$t } } relatedpSummary[relatedTitlesNum] = removetags(postcontent, relatedmaxnum); if ("media$thumbnail" in entry) { postimg = entry.media$thumbnail.url } else { postimg = relatednoimage } relatedThumb[relatedTitlesNum] = postimg; for (var k = 0; k < entry.link.length; k++) { if (entry.link[k].rel == "alternate") { relatedUrls[relatedTitlesNum] = entry.link[k].href; break } } relatedTitlesNum++ } } function showrelated() { var tmp = new Array(0); var tmp2 = new Array(0); var tmp3 = new Array(0); var tmp4 = new Array(0); for (var i = 0; i < relatedUrls.length; i++) { if (!contains(tmp, relatedUrls[i])) { tmp.length += 1; tmp[tmp.length - 1] = relatedUrls[i]; tmp2.length += 1; tmp2[tmp2.length - 1] = relatedTitles[i]; tmp3.length += 1; tmp3[tmp3.length - 1] = relatedpSummary[i]; tmp4.length += 1; tmp4[tmp4.length - 1] = relatedThumb[i] } } relatedTitles = tmp2; relatedUrls = tmp; relatedpSummary = tmp3; relatedThumb = tmp4; for (var i = 0; i < relatedTitles.length; i++) { var index = Math.floor((relatedTitles.length - 1) * Math.random()); var tempTitle = relatedTitles[i]; var tempUrls = relatedUrls[i]; var tempResum = relatedpSummary[i]; var tempImage = relatedThumb[i]; relatedTitles[i] = relatedTitles[index]; relatedUrls[i] = relatedUrls[index]; relatedpSummary[i] = relatedpSummary[index]; relatedThumb[i] = relatedThumb[index]; relatedTitles[index] = tempTitle; relatedUrls[index] = tempUrls; relatedpSummary[index] = tempResum; relatedThumb[index] = tempImage } var somePosts = 0; var r = Math.floor((relatedTitles.length - 1) * Math.random()); var relsump = r; var output; var dirURL = document.URL; while (somePosts < relatedPostsNum) { if (relatedUrls[r] != dirURL) { output = "<div class='related-post'>"; output += "<div class='rpimg'><a href='" + relatedUrls[r] + "' rel='nofollow'  target='_self' title='" + relatedTitles[r] + "'><img src='" + relatedThumb[r] + "' /></a></div>"; output += "<h4><a href='" + relatedUrls[r] + "' target='_self' title='" + relatedTitles[r] + "'>" + relatedTitles[r] + "</a></h4>"; output += "<p>" + relatedpSummary[r] + " ... </p>"; output += "</div>"; document.write(output); somePosts++; if (somePosts == relatedPostsNum) { break } } if (r < relatedTitles.length - 1) { r++ } else { r = 0 } if (r == relsump) { break } } } function removetags(text, length) { var pSummary = text.split("<"); for (var i = 0; i < pSummary.length; i++) { if (pSummary[i].indexOf(">") != -1) { pSummary[i] = pSummary[i].substring(pSummary[i].indexOf(">") + 1, pSummary[i].length) } } pSummary = pSummary.join(""); pSummary = pSummary.substring(0, length - 1); return pSummary } function contains(a, e) { for (var j = 0; j < a.length; j++) { if (a[j] == e) { return true } } return false };
-    //]]>
-  </script>
-
-  <script>
-    jQuery(document).ready(function () {
-      var offset = 220;
-      var duration = 500;
-      jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() & gt; offset) {
-        jQuery(&#39;.back - to - top &#39;).fadeIn(duration);
-                   } else {
-      jQuery(&#39;.back - to - top &#39;).fadeOut(duration);
-    }
-                   });
-    jQuery(&#39;.back - to - top &#39;).click(function (event) {
-      event.preventDefault();
-      jQuery(&#39; html, body &#39;).animate({ scrollTop: 0 }, duration);
-    return false;
-                   })
-          });
-  </script>
 </head>
 
 <body>
@@ -986,15 +957,24 @@ padding-left: 0 !important;
         <!-- Amdin Portfolio [end] -->
 
         <div id="my-work">
-          <h2>My Work</h2>
-          <p>Here is some of my work...</p>
+          <h1>Work</h1>
+          <h3>I stay updated with the latest approaches and best practices to deliver top-notch app development.</h3>
           <div class="photos-container">
-            <img
+            <img 
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
-              alt="Photo 1" />
+              alt="Charging Up" />
             <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
-              alt="Photo 2" />
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJiDVJkzKx9oMFXiDjiXp94C5CKGLWj2MdshkfkJNBUubUMWCU5k-_0r75pM4gj1OffI3W29cjvXrAiRgeExPTg5Xcd7KiOmm0ZVxeIBaA1wUIyGHA8SwrU7jlSmYRiSxMcbid6KTY3ucaHtfkuSeJR8wxa_WdblX1w8WZQH966Os2qvV-GwN3wJhk7eGv/s987/pintraveler-1.png"
+              alt="Pin Traveler" />
+          </div>
+
+          <div class="photos-container">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq88TYsPpwHcXHdLN9kLPcKrFTxkKHM5EFNQJN1UePPXP0kvDkNNcaGSJrJA3ybaMMCIT-vvRa_bqAyOBGogCDk0kCfGA3y2liIT79NBGkndZrvuqoi24C8q8gHMfP_Asd1-VeY7tiKhhjxUkrWz0geZ_oiOCEkfSxHKtJPP1ytHPTposIRaNeOJkhyphenhyphenJP9/s987/metta-1.png"
+              alt="Metta" />
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIhbRBOz_Lqg68_uJJwHXugZXpi8DTYcCIZfFP82r_Cd5x4hMyr8wi9iuIBSSZmmeT8v2mVQTOD2Kcrl1azmtu6xc_w7lY61dhwm2Q39kos3Pdn6VvJvAnwJR3sZ_keTMwWjGDIXTb0f_p30myyd92_H_otWlC5k2W_AaJyXZM_FotY0CmADtGhASf2cak/s987/1%20android%20developer.png"
+              alt="Insta Saver" />
           </div>
         </div>
 
