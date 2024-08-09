@@ -510,7 +510,7 @@ font-size:18px;
 padding-left: 0 !important;
 }
 .social-text-bottom {
-  position: relative; /* important for absolute child to work */
+  position: relative; 
   font-weight: normal;
   padding: 0 0 1em;
   text-align: left;
@@ -580,6 +580,18 @@ padding-left: 0 !important;
         .contact-form-cross {
           display: none;
         }
+
+        .photos-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.photos-container img {
+    width: 48%; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 </style>
     </b:if>
     <b:if cond='data:blog.pageType != &quot;index&quot;'>
@@ -685,6 +697,12 @@ padding-left: 0 !important;
       </b:if>
     </b:if>
     <style>
+
+      html, body {
+
+    scroll-behavior: smooth; 
+  }
+
       #test {
         color: #fff;
         font-family: Poppins;
@@ -695,25 +713,36 @@ padding-left: 0 !important;
         text-align: center;
         top: 1px;
       }
-
+      .buttonContainer {
+    text-align: center;
+}
       
   .see-my-work-btn {
-    display: inline-block;
-    margin-top: 20px;
+    display: inline-block; 
     padding: 10px 20px;
-    background-color: #38a9e3;
+    margin-top: 50px;
+    background-color: black;
     color: white;
     text-decoration: none;
     font-family: Poppins;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 17px;
+    border-radius: 100px;
     transition: background-color 0.3s ease;
+    border:1px solid black;
+    margin-left: auto; 
+    margin-right: auto; 
   }
   .see-my-work-btn:hover {
-    background-color: #16709f;
+    background-color: white;
+    color: black;
+    border:1px solid black;
   }
   #my-work {
-    margin-top: 100vh; /* For demonstration purposes, to scroll down */
+    margin-top: 20vh;
+    background-color: #000;
+    color: #fff;
+    padding: 24px;
+    border-radius: 20px;
   }
 
 
@@ -825,7 +854,9 @@ padding-left: 0 !important;
                 </i></a>
                 </p>
 
+                <div class="buttonContainer">
                 <a href="#my-work" class="see-my-work-btn">See My Work</a>
+              </div>
               </div>
               <div class='col-md-3' style="margin-top: 100px;">
                 <div class='wrp'>
@@ -841,8 +872,13 @@ padding-left: 0 !important;
             <div id="my-work">
                 <h2>My Work</h2>
                 <p>Here is some of my work...</p>
-                <!-- Add more content about your work here -->
-             </div>
+                <div class="photos-container">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png" 
+                alt="Photo 1"/>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png" 
+                alt="Photo 2"/>
+              </div>
+           </div>
       
 </div>
 </div>
