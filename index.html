@@ -15,6 +15,8 @@
   <link href='https://twitter.com/heyeneseray' rel='publisher' />
   <link href='https://twitter.com/heyeneseray' rel='author' />
   <link href='https://twitter.com/heyeneseray' rel='me' />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&#38;display=swap" rel="stylesheet"/>
+
   <meta content='Turkey' name='geo.placename' />
   <!--########### SEO Titles ########### -->
   <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -130,7 +132,7 @@
     href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
     rel='stylesheet' type='text/css' />
   <link
-    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8'
+    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLibre Caslon Tex%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8'
     id='google-fonts-1-css' media='all' rel='stylesheet' type='text/css' />
 
   <b:skin>
@@ -155,11 +157,19 @@ width: 100% !important;
 //           Main Menu Style            
 /////////////////////////////////////////==*/
 .main-menu, .responsive-menu ul, .social-member, .progess-bars, .first-footer .social-footer ul { padding: 0; margin: 0; list-style: none; }
-body { font: 14px/1.85em Poppins; color: #030303; font-weight: 300; font-style: normal; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; }
+body { 
+  font: 14px/1.85emLibre Caslon Text; 
+  color: white; 
+  font-weight: 300; 
+  font-style: normal; 
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+   -webkit-text-size-adjust: 100%;
+       font-family: "DM Sans", sans-serif;
+   }
 a, a:hover, a:focus { text-decoration: none; -webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-weight: 300;
 }
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -169,7 +179,10 @@ float: right;
 margin-top: 50px;
 width: 100%;
 }
-.section-content { padding: 0 6%; margin-bottom: 50px; }
+.section-content { 
+  padding: 0 7.5%; 
+  margin-bottom: 50px; 
+}
 .section-title {
 border-top: 0px solid;
 margin-bottom: 40px;
@@ -178,7 +191,6 @@ margin-bottom: 40px;
 
 color: #000;
 display: inline-block;
-font-family: Poppins;
 font-size: 30px;
 font-weight: 400;
 letter-spacing: 0.5px;
@@ -230,7 +242,6 @@ text-decoration: none;
 .showpageNum a {
 background: #ff1919;
 color: #fff;
-font-family: Poppins;
 font-size: 10px;
 font-weight: 800;
 text-decoration: none;
@@ -238,7 +249,7 @@ text-decoration: none;
 .showpage a {
 background: #333 none repeat scroll 0 0;
 color: #fff;
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-size: 10px;
 font-weight: 800;
 text-decoration: none;
@@ -272,7 +283,6 @@ border-radius: 0;
 background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 border: medium none;
 color: #000;
-font-family: Poppins;
 font-size: 22px;
 font-weight: 400;
 margin: -3px 0 15px;
@@ -281,7 +291,7 @@ padding: 0;
 .author-archive p {
 background: #fff none repeat scroll 0 0;
 color: #777;
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-size: 14px;
 margin: 0 0 15px;
 padding: 5px 5px 15px 17px;
@@ -323,7 +333,7 @@ top: 10px;
 #about .section-title, #blog .section-title, #services .section-title, #contact-form .section-title { border-color: #afafaf; }
 #about h3.name {
 background: #eee none repeat scroll 0 0;
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-size: 16px;
 font-weight: 600;
 margin: 0;
@@ -379,7 +389,7 @@ padding: 25px 40px;
 .logo a { color: white; }
 #headur h1 {
 color: #000;
-font-family: Poppins;
+font-family:Libre Caslon Text, Serif;
 font-size: 25px;
 font-weight: 800;
 margin: 0;
@@ -454,14 +464,14 @@ opacity: 0.4;
 }
 #main-content > div > div > h2 {
 color: #333 !important;
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-size: 77px;
 font-weight: 800;
 margin-bottom: 30px;
 text-transform: uppercase;
 }
 #main-content > div > div > p {
-font-family: Poppins;
+        font-family: "DM Sans", sans-serif;
 font-size: 14px;
 letter-spacing: 2px;
 line-height: 1.8em;
@@ -475,7 +485,7 @@ width: 49%;
 .service-item .service-icon { width: 25%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 17px; height: 100%; }
 .service-item .service-content { width: 75%; overflow: hidden; text-align: left; padding: 20px 20px 20px 0; }
 .service-item .service-content h3 {
-  font-family: Poppins;
+          font-family: "DM Sans", sans-serif;
 font-size: 18px;
 font-weight: 300;
 margin: 0;
@@ -531,13 +541,13 @@ padding-left: 0 !important;
 .social-text-bottom::before {
   content:'';
   position: absolute;
-  background-color: #030303;
   width: 25%;
   height: 2px;
   bottom: 0;
+  background-color: white;
 }
 .first-footer .social-footer ul li {display: inline; padding: 10px;}
-.first-footer .social-footer ul li a {font-family: Poppins; text-align: cenleter; line-height: 18px; color: black; padding-bottom: 5px;}
+.first-footer .social-footer ul li a {        font-family: "DM Sans", sans-serif; text-align: cenleter; line-height: 18px; color: white; padding-bottom: 5px;}
 #keeptzy{color:#000;}
 .bottom-footer a { color:#000; }
 .bottom-footer .credits { text-align: right; }
@@ -562,7 +572,7 @@ padding-left: 0 !important;
         outline: 0;
         border-color: #d5dbe0;
         box-shadow: none;
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
         color: #868C92;
       }
 
@@ -585,7 +595,7 @@ padding-left: 0 !important;
         margin: 20px 16px 0px;
         box-shadow: none;
         padding: 10px;
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
         font-size: 16px;
         font-weight: 500;
         background: #fff;
@@ -602,7 +612,7 @@ padding-left: 0 !important;
         background: #fff;
         color: green;
         border: 0;
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
       }
 
       .contact-form-cross {
@@ -618,8 +628,7 @@ padding-left: 0 !important;
 
       .photos-container img {
         width: 48%;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
       }
     </style>
   </b:if>
@@ -640,7 +649,7 @@ padding-left: 0 !important;
 
       .related-post p,
       .related-post h4 {
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
         height: 20px;
         overflow: hidden;
         padding: 0 4px;
@@ -649,7 +658,7 @@ padding-left: 0 !important;
       #relatedpostssum h2 {
         background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
         color: #000;
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 1px;
@@ -671,7 +680,7 @@ padding-left: 0 !important;
       .fn a {
         background: #ff0000 none repeat scroll 0 0;
         color: #fff;
-        font-family: Poppins;
+                font-family: "DM Sans", sans-serif;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.8px;
@@ -713,7 +722,7 @@ padding-left: 0 !important;
           background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
           color: #000;
           display: block;
-          font-family: Poppins;
+                  font-family: "DM Sans", sans-serif;
           font-size: 17px;
           font-weight: 300;
           letter-spacing: 0.5px;
@@ -796,13 +805,13 @@ padding-left: 0 !important;
   <style>
     html,
     body {
-
+      background-color: black;
       scroll-behavior: smooth;
     }
 
     #test {
       color: #fff;
-      font-family: Poppins;
+              font-family: "DM Sans", sans-serif;
       font-size: 34px;
       font-weight: 500;
       padding-bottom: 20px;
@@ -811,40 +820,29 @@ padding-left: 0 !important;
       top: 1px;
     }
 
-    .buttonContainer {
-      text-align: center;
-    }
-
-    .see-my-work-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 50px;
-      background-color: black;
-      color: white;
-      text-decoration: none;
-      font-family: Poppins;
-      font-size: 17px;
-      border-radius: 100px;
-      transition: background-color 0.3s ease;
-      border: 1px solid black;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .see-my-work-btn:hover {
-      background-color: white;
-      color: black;
-      border: 1px solid black;
-    }
-
     #my-work {
       margin-top: 20vh;
       background-color: #000;
       color: #fff;
-      font-family: Poppins;
+              font-family: "DM Sans", sans-serif;
       padding: 24px;
-      border-radius: 20px;
     }
+    .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: black;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: black;
+}
+
+.col-md-9 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
   </style>
 </head>
 
@@ -892,63 +890,60 @@ padding-left: 0 !important;
         <!-- Amdin Portfolio -->
         <div class='container'>
           <div class='col-md-9'>
-            <p style='font-family: Poppins; font-size:21px; margin-top: 70px;'>
-              <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px;'>👋
+            <p style='font-family: "DM Sans", sans-serif; font-size:25px; margin-top: 20px;'>
+              <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:31px; padding-left: 0px;'>👋
                 Hey! It's Enes.</span>
               <br>
               </br>
               I've been developing mobile applications since my childhood years. This journey started with C++, keeps
               going with developing <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>mobile
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>mobile
                 applications.</span>
               <br>
               </br>
               My passion for developing applications for both <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>Android</span>
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>Android</span>
               and <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>iOS</span>
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>iOS</span>
               brought me so much experience in Java/Kotlin and Swift languages. After 7 years of experience in mobile
               development, I've been working as a <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>freelancer</span>
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>freelancer</span>
               for 4 years.
 
               <br>
               </br>
               Also I am a <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>digital
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>digital
                 nomad</span>
               traveling to various countries while working on <span
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>indie</span>
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>indie</span>
               digital products with a small team.
               <br>
               </br>
               You can contact me at <a href="mailto:enes@eneseray.com"
-                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>enes@eneseray.com
-                <i>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
-                    <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
-                    <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
+                style='font-weight:bold; color: white; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>enes@eneseray.com<i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#fffff" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#fffff" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#ffffff" stroke-linecap="square" />
                   </svg>
-                </i></a> <i> or </i> <a target="_blank" href="https://cal.com/eneseray/30min"
-                style='font-weight:bold; color:#363636; font-family: Poppins;'>Book a meeting <i>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
-                    <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
-                    <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
+                </i></a> <i> or  </i> 
+                <a target="_blank" href="https://cal.com/eneseray/30min"
+                style='font-weight:bold; color: white; font-family: "DM Sans", sans-serif; margin-left: 5px;'>Book a meeting <i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#fffff" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#fffff" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#ffffff" stroke-linecap="square" />
                   </svg>
                 </i></a>
             </p>
 
-            <div class="buttonContainer">
-              <a href="#my-work" class="see-my-work-btn">See My Work</a>
-            </div>
           </div>
-          <div class='col-md-3' style="margin-top: 100px;">
+          <div class='col-md-3' style="margin-top: 100px; padding-left: 35px;">
             <div class='wrp'>
               <img
                 src='https://blogger.googleusercontent.com/img/a/AVvXsEgGA1JwB3XPZiI2jVDgUhNO7ASwlioXPYVZ89xaGoYF4Y9u2r9yphbreFKEYt_mVd_TF37jD-AmBzM0EUPO0gWnDt1uMRI_O75woMorVZ8PEUQZS0o18J_bB3hzXQFUw2HKJ3QK8oO6M_sAyLRO0eoqIrP4Y71BUpm4a9wVvAnfAFFj6fHajev-cBrq_Q=s2048'
-                style='border-radius: 50%; width: 100%; max-width: 350px; height: 100%; max-height: 350px;' />
+                style='border-radius: 50%; width: auto; max-width: 300px; height: auto; max-height: 300px; aspect-ratio: 1;' />
 
 
             </div>
@@ -957,8 +952,12 @@ padding-left: 0 !important;
         <!-- Amdin Portfolio [end] -->
 
         <div id="my-work">
-          <h1>Work</h1>
-          <h3>I stay updated with the latest approaches and best practices to deliver top-notch app development.</h3>
+
+          <div style="display:flex; flex-wrap: wrap; align-items: center;">
+            <h1 style="margin-right: 10px;">Top-notch app development. </h1>
+            <h1 style="color:#bebebe;">My passion.</h1>
+            </div> 
+
           <div class="photos-container">
             <img 
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
