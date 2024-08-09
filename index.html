@@ -1,127 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html class='trial no-js' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<head>
-<meta content='adb1306674b0ed97' name='yandex-verification'/>
-<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
-<b:include data='blog' name='all-head-content'/>
-<meta content='iOS ve Android uygulama geliştirici olarak freelance çalışıyorum. Freelance android geliştirici veya freelance iOS geliştirici arıyorsanız birlikte çalışabiliriz.' name='description'/>     
-<meta content='Enes Eray,yazılımcı blogları, android geliştirici, girişimcilik, freelance çalışmak' name='keywords'/>
-<meta content='Enes Eray' name='author'/>
-<link href='https://twitter.com/heyeneseray' rel='publisher'/>
-<link href='https://twitter.com/heyeneseray' rel='author'/>
-<link href='https://twitter.com/heyeneseray' rel='me'/>
-<meta content='Turkey' name='geo.placename'/>
-    <!--########### SEO Titles ########### -->
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <title>
-        <data:blog.pageTitle/>
-      </title>
-      <b:else/>
-      <title>
-        <data:blog.pageName/>
-       
-        <data:blog.title/>
-      </title>
-    </b:if>
-    <!--########### SEO Meta ########### -->
-    <b:if cond='data:blog.url != data:blog.homepageUrl'>
-      <b:if cond='data:blog.pageType != &quot;item&quot;'>
-        <b:if cond='data:blog.metaDescription != &quot;&quot;'>
-          <meta expr:content='data:blog.metaDescription' name='description'/>
-        </b:if>
-      </b:if>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <b:if cond='data:blog.searchLabel'>
-        <meta content='noindex,nofollow' name='robots'/>
-      </b:if>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;archive&quot;'>
-      <meta content='noindex,nofollow' name='robots'/>
-    </b:if>
-    <b:if cond='data:blog.isMobile'>
-      <meta content='noindex,nofollow' name='robots'/>
-    </b:if>
-    <!-- SEO Title Tag -->
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
-      <title>
-        <data:blog.title/>
-      </title>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <title>
-        <data:blog.pageName/>
-        | 
-        <data:blog.title/>
-      </title>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;archive&quot;'>
-      <title>
-        Archive for 
-        <data:blog.pageName/>
-      </title>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-      <title>
-        <data:blog.pageName/>
-      </title>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <b:if cond='data:blog.searchLabel'>
-        <title>
-          <data:blog.title/>
-          - 
-          <data:blog.pageName/>
-        </title>
-      </b:if>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-      <title>
-        Page Not Found
-      </title>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <b:if cond='data:blog.url != data:blog.homepageUrl'>
-        <title>
-          <data:blog.pageTitle/>
-          - All Post
-        </title>
-      </b:if>
-    </b:if>
-    <!--############# Facebook Graph ################-->
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <meta expr:content='data:blog.pageName' property='og:title'/>
-      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
-      <meta content='article' property='og:type'/>
-    </b:if>
-    <meta expr:content='data:blog.title' property='og:site_name'/>
-    <b:if cond='data:blog.postImageThumbnailUrl'>
-      <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-      <b:else/>
-      <meta content='Blog Logo URL Here' property='og:image'/>
-    </b:if>
-    
-   <meta content='Facebook App ID here' property='fb:app_id'/>
-    <meta content='Facebook Admins ID here' property='fb:admins'/>
-    <!--############# Fonts Links ################-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display' rel='stylesheet'/>
-    <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans:300italic,:400italic,400,300,600,700,800|Rambla:700' rel='stylesheet' type='text/css'/>
-    <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
-    <link href='http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'/>
-    <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'/>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js' type='text/javascript'/>
-    <link href='https://www.blogger.com/static/v1/widgets/1428447971-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet'/>
-    <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'/>  
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8' id='google-fonts-1-css' media='all' rel='stylesheet' type='text/css'/>
+<html class='trial no-js' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
+  xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 
-    <b:skin><![CDATA[
+<head>
+  <meta content='adb1306674b0ed97' name='yandex-verification' />
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+  <b:include data='blog' name='all-head-content' />
+  <meta
+    content='iOS ve Android uygulama geliştirici olarak freelance çalışıyorum. Freelance android geliştirici veya freelance iOS geliştirici arıyorsanız birlikte çalışabiliriz.'
+    name='description' />
+  <meta content='Enes Eray,yazılımcı blogları, android geliştirici, girişimcilik, freelance çalışmak' name='keywords' />
+  <meta content='Enes Eray' name='author' />
+  <link href='https://twitter.com/heyeneseray' rel='publisher' />
+  <link href='https://twitter.com/heyeneseray' rel='author' />
+  <link href='https://twitter.com/heyeneseray' rel='me' />
+  <meta content='Turkey' name='geo.placename' />
+  <!--########### SEO Titles ########### -->
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <title>
+      <data:blog.pageTitle />
+    </title>
+    <b:else />
+    <title>
+      <data:blog.pageName />
+
+      <data:blog.title />
+    </title>
+  </b:if>
+  <!--########### SEO Meta ########### -->
+  <b:if cond='data:blog.url != data:blog.homepageUrl'>
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+        <meta expr:content='data:blog.metaDescription' name='description' />
+      </b:if>
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.searchLabel'>
+      <meta content='noindex,nofollow' name='robots' />
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+    <meta content='noindex,nofollow' name='robots' />
+  </b:if>
+  <b:if cond='data:blog.isMobile'>
+    <meta content='noindex,nofollow' name='robots' />
+  </b:if>
+  <!-- SEO Title Tag -->
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <title>
+      <data:blog.title />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <title>
+      <data:blog.pageName />
+      |
+      <data:blog.title />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+    <title>
+      Archive for
+      <data:blog.pageName />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+    <title>
+      <data:blog.pageName />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.searchLabel'>
+      <title>
+        <data:blog.title />
+        -
+        <data:blog.pageName />
+      </title>
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+    <title>
+      Page Not Found
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.url != data:blog.homepageUrl'>
+      <title>
+        <data:blog.pageTitle />
+        - All Post
+      </title>
+    </b:if>
+  </b:if>
+  <!--############# Facebook Graph ################-->
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <meta expr:content='data:blog.pageName' property='og:title' />
+    <meta expr:content='data:blog.canonicalUrl' property='og:url' />
+    <meta content='article' property='og:type' />
+  </b:if>
+  <meta expr:content='data:blog.title' property='og:site_name' />
+  <b:if cond='data:blog.postImageThumbnailUrl'>
+    <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image' />
+    <b:else />
+    <meta content='Blog Logo URL Here' property='og:image' />
+  </b:if>
+
+  <meta content='Facebook App ID here' property='fb:app_id' />
+  <meta content='Facebook Admins ID here' property='fb:admins' />
+  <!--############# Fonts Links ################-->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans:300italic,:400italic,400,300,600,700,800|Rambla:700'
+    rel='stylesheet' type='text/css' />
+  <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  <link href='http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css' rel='stylesheet'
+    type='text/css' />
+  <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript' />
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js' type='text/javascript' />
+  <link href='https://www.blogger.com/static/v1/widgets/1428447971-widget_css_bundle.css' rel='stylesheet'
+    type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' />
+  <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet'
+    type='text/css' />
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
+    rel='stylesheet' type='text/css' />
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8'
+    id='google-fonts-1-css' media='all' rel='stylesheet' type='text/css' />
+
+  <b:skin>
+    <![CDATA[
       
 */
 body#layout ul, li{list-style:none;}
@@ -536,354 +549,460 @@ padding-left: 0 !important;
 @media (max-width: 767px) { .slider-caption a, .slider-caption p { display: none; top: 50px !important; } }
 @media (max-width: 581px) { .slider-caption { display: none; } }
 
-    ]]></b:skin>
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    ]]>
+  </b:skin>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <style type='text/css'>
+      #contact-form input:not(.submit):not([id$=_contact-form-submit]),
+      #contact-form textarea {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        max-width: 100%;
+        outline: 0;
+        border-color: #d5dbe0;
+        box-shadow: none;
+        font-family: Poppins;
+        color: #868C92;
+      }
+
+      .message-wrp {
+        text-align: center;
+        float: left;
+        width: 100%;
+      }
+
+      #contact-formForm1 {
+        display: none !important
+      }
+
+      .submit.largeButton,
+      #contact-form [id$=_contact-form-submit] {
+        width: inherit;
+      }
+
+      #contact-form .contact-form-error-message-with-border {
+        margin: 20px 16px 0px;
+        box-shadow: none;
+        padding: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        background: #fff;
+        color: #e20b0b;
+        border: 0;
+      }
+
+      #contact-form .contact-form-success-message-with-border {
+        margin: 10px 16px 10px;
+        box-shadow: none;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        background: #fff;
+        color: green;
+        border: 0;
+        font-family: Poppins;
+      }
+
+      .contact-form-cross {
+        display: none;
+      }
+
+      .photos-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .photos-container img {
+        width: 48%;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </b:if>
+  <b:if cond='data:blog.pageType != &quot;index&quot;'>
+    <style type='text/css'>
+      div.post-header {
+        margin: 10px 0;
+      }
+
+      #relatedpostssum h4 &gt;
+
+      a {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .related-post p,
+      .related-post h4 {
+        font-family: Poppins;
+        height: 20px;
+        overflow: hidden;
+        padding: 0 4px;
+      }
+
+      #relatedpostssum h2 {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 8px 5px;
+        padding: 5px 3px;
+      }
+
+      .related-post {
+        float: left;
+        width: 260px;
+      }
+
+      .rpimg img {
+        height: 185px;
+        padding: 0 4px;
+        width: 100%;
+      }
+
+      .fn a {
+        background: #ff0000 none repeat scroll 0 0;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        padding: 1px 5px !important;
+      }
+
+      .fn {
+        background: #efefef none repeat scroll 0 0;
+        color: #000;
+        padding: 12px !important;
+      }
+
+      .post-header-line-1 .post-timestamp {
+        background: #ededed none repeat scroll 0 0;
+        color: #000;
+      }
+
+      .post-header-line-1 .post-timestamp a {
+        background: #ff0000 none repeat scroll 0 0;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 7px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        background: none !important;
+      }
+    </style>
+  </b:if>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'>
+    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
       <style type='text/css'>
-        #contact-form input:not(.submit):not([id$=_contact-form-submit]), #contact-form textarea {
+        .post-title.entry-title {
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+          color: #000;
+          display: block;
+          font-family: Poppins;
+          font-size: 17px;
+          font-weight: 300;
+          letter-spacing: 0.5px;
+          line-height: 21px;
+          overflow: hidden;
+          text-overflow: ellipsis;
           width: 100%;
-          margin: 0;
-          height: 100%;
-          max-width: 100%;
-          outline: 0;
-          border-color: #d5dbe0;
-          box-shadow: none;
-          font-family: Poppins;
-          color: #868C92;
         }
-        .message-wrp {
-          text-align: center; float:left;width:100%;
-        }
-        #contact-formForm1{display:none!important}
-        .submit.largeButton,#contact-form [id$=_contact-form-submit]{
-          width: inherit;
-        }
-        #contact-form .contact-form-error-message-with-border {
-          margin: 20px 16px 0px;
-          box-shadow: none;
-          padding: 10px;
-		      font-family: Poppins;
-          font-size: 16px;
-          font-weight: 500;
-          background: #fff;
-          color: #e20b0b ;
-          border: 0;
-        }
-        #contact-form .contact-form-success-message-with-border {
-          margin: 10px 16px 10px; 
-			 box-shadow: none;  padding: 10px; 
-		 font-size: 16px;  font-weight: 500;  
-          background: #fff;  
-          color: green;  
-          border: 0;
-          font-family: Poppins;
-        }
-        .contact-form-cross {
+
+        .post-body {
           display: none;
         }
 
-        .photos-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.photos-container img {
-    width: 48%; 
-    border-radius: 8px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-</style>
-    </b:if>
-    <b:if cond='data:blog.pageType != &quot;index&quot;'>
-      <style type='text/css'>
-        div.post-header {margin: 10px 0;}
-        #relatedpostssum h4 &gt; a {
+        .post-title.entry-title a {
           color: #000;
-          font-size: 14px;
-          font-weight: 400;
           text-decoration: none;
         }
-        .related-post p, .related-post h4 {
-          font-family: Poppins;
-          height: 20px;
-          overflow: hidden;
-          padding: 0 4px;
-        }
-        #relatedpostssum h2 {
-          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-          color: #000;
-          font-family: Poppins;
-          font-size: 18px;
-          font-weight: 400;
-          letter-spacing: 1px;
-          margin: 8px 5px;
-          padding: 5px 3px;
-        }
-        .related-post {
+
+        .hentry {
           float: left;
-          width: 260px;
+          width: 31.333333%;
+          margin: 1%;
         }
-        .rpimg img {
-          height: 185px;
-          padding: 0 4px;
+
+        .hentry img {
           width: 100%;
+          height: 250px;
         }
-        .fn a {
-          background: #ff0000 none repeat scroll 0 0;
-          color: #fff;
-          font-family: Poppins;
-          font-size: 14px;
-          font-weight: 600;
-          letter-spacing: 0.8px;
-          padding: 1px 5px !important;
+
+        @media (max-width: 991px) {
+          .hentry img {
+            max-height: 250px;
+          }
         }
-        .fn {
-          background: #efefef none repeat scroll 0 0;
-          color: #000;
-          padding: 12px !important;
+
+        @media (max-width: 767px) {
+          .text-header {
+            top: 224px
+          }
+
+          .hentry {
+            width: 48%;
+          }
+
+          #main-content &gt;
+          div.header-bg &gt;
+          div &gt;
+
+          p {
+            width: 90%;
+          }
         }
-        .post-header-line-1 .post-timestamp {
-          background: #ededed none repeat scroll 0 0;
-          color: #000;
+
+        @media (max-width: 500px) {
+          .hentry {
+            width: 100%;
+          }
         }
-        .post-header-line-1 .post-timestamp a {
-          background: #ff0000 none repeat scroll 0 0;
-          color: #fff;
-          font-weight: 700;
-          padding: 0 7px;
+
+        @media (max-width: 640px) {
+          .section-content {
+            padding: 0 5% !important;
+          }
         }
-        h1, h2, h3, h4, h5, h6 {
-          background:none !important;
+
+        @media (max-width: 615px) {
+          .section-content {
+            padding: 0 0% !important;
+          }
+        }
+
+        @media (max-width: 554px) {
+          .section-content {
+            padding: 0 8% !important;
+          }
         }
       </style>
     </b:if>
-    <b:if cond='data:blog.pageType != &quot;item&quot;'>
-      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-        <style type='text/css'>
-          .post-title.entry-title {
-            background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
-            color: #000;
-            display: block;
-            font-family: Poppins;
-            font-size: 17px;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-            line-height: 21px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-          }
-          .post-body{display:none;}
-          .post-title.entry-title a {
-            color: #000;
-            text-decoration: none;
-          }
-          .hentry {
-            float: left;
-            width: 31.333333%;
-            margin: 1%;
-          }
-          .hentry img {
-            width: 100%;
-            height: 250px;
-          }
-          @media (max-width: 991px) { .hentry img {max-height: 250px;}}
-          @media (max-width: 767px) {.text-header {top: 224px} .hentry {width: 48%;}#main-content &gt; div.header-bg &gt; div &gt; p {width: 90%;}}
-          @media (max-width: 500px) { .hentry {width: 100%;}}
-          @media (max-width: 640px) { .section-content { padding: 0 5% !important;}}
-          @media (max-width: 615px) { .section-content { padding: 0 0% !important;}}
-          @media (max-width: 554px) { .section-content { padding: 0 8% !important;}}
-        </style>
-      </b:if>
-    </b:if>
-    <style>
+  </b:if>
+  <style>
+    html,
+    body {
 
-      html, body {
+      scroll-behavior: smooth;
+    }
 
-    scroll-behavior: smooth; 
-  }
+    #test {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 34px;
+      font-weight: 500;
+      padding-bottom: 20px;
+      position: relative;
+      text-align: center;
+      top: 1px;
+    }
 
-      #test {
-        color: #fff;
-        font-family: Poppins;
-        font-size: 34px;
-        font-weight: 500;
-        padding-bottom: 20px;
-        position: relative;
-        text-align: center;
-        top: 1px;
-      }
-      .buttonContainer {
-    text-align: center;
-}
-      
-  .see-my-work-btn {
-    display: inline-block; 
-    padding: 10px 20px;
-    margin-top: 50px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    font-family: Poppins;
-    font-size: 17px;
-    border-radius: 100px;
-    transition: background-color 0.3s ease;
-    border:1px solid black;
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-  .see-my-work-btn:hover {
-    background-color: white;
-    color: black;
-    border:1px solid black;
-  }
-  #my-work {
-    margin-top: 20vh;
-    background-color: #000;
-    color: #fff;
-    padding: 24px;
-    border-radius: 20px;
-  }
+    .buttonContainer {
+      text-align: center;
+    }
 
+    .see-my-work-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 50px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      font-family: Poppins;
+      font-size: 17px;
+      border-radius: 100px;
+      transition: background-color 0.3s ease;
+      border: 1px solid black;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
+    .see-my-work-btn:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
 
-    </style>
-    <script type='text/javascript'>
-      //<![CDATA[
-      var relatedPostsNum=3; //number of related post
-      var relatedmaxnum=35; // summary length
-      summary_noimg = 550;// summary length when no image
-      summary_img = 10;// summary length with image
-      //summary
-      function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<");for(var i=0;i<s.length;i++){if(s[i].indexOf(">")!=-1){s[i]=s[i].substring(s[i].indexOf(">")+1,s[i].length)}}strx=s.join("")}chop=(chop<strx.length-1)?chop:strx.length-2;while(strx.charAt(chop-1)!=" "&&strx.indexOf(" ",chop)!=-1){chop++}strx=strx.substring(0,chop-1);return strx+"..."}function createSummaryAndThumb(pID){var div=document.getElementById(pID);var imgtag="";var img=div.getElementsByTagName("img");var summ=summary_noimg;if(img.length>=1){imgtag="";summ=summary_img}var summary=imgtag+"<div>"+removeHtmlTag(div.innerHTML,summ)+"</div>";div.innerHTML=summary};
-      ///related posts
-      var relatedTitles=new Array();var relatedUrls=new Array();var relatedpSummary=new Array();var relatedThumb=new Array();var relatedTitlesNum=0;var relatednoimage="";function readpostlabels(json){var entry,postimg,postcontent,cat;for(var i=0;i<json.feed.entry.length;i++){entry=json.feed.entry[i];if(i==json.feed.entry.length){break}relatedTitles[relatedTitlesNum]=entry.title.$t;postcontent="";if("content" in entry){postcontent=entry.content.$t}else{if("summary" in entry){postcontent=entry.summary.$t}}relatedpSummary[relatedTitlesNum]=removetags(postcontent,relatedmaxnum);if("media$thumbnail" in entry){postimg=entry.media$thumbnail.url}else{postimg=relatednoimage}relatedThumb[relatedTitlesNum]=postimg;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=="alternate"){relatedUrls[relatedTitlesNum]=entry.link[k].href;break}}relatedTitlesNum++}}function showrelated(){var tmp=new Array(0);var tmp2=new Array(0);var tmp3=new Array(0);var tmp4=new Array(0);for(var i=0;i<relatedUrls.length;i++){if(!contains(tmp,relatedUrls[i])){tmp.length+=1;tmp[tmp.length-1]=relatedUrls[i];tmp2.length+=1;tmp2[tmp2.length-1]=relatedTitles[i];tmp3.length+=1;tmp3[tmp3.length-1]=relatedpSummary[i];tmp4.length+=1;tmp4[tmp4.length-1]=relatedThumb[i]}}relatedTitles=tmp2;relatedUrls=tmp;relatedpSummary=tmp3;relatedThumb=tmp4;for(var i=0;i<relatedTitles.length;i++){var index=Math.floor((relatedTitles.length-1)*Math.random());var tempTitle=relatedTitles[i];var tempUrls=relatedUrls[i];var tempResum=relatedpSummary[i];var tempImage=relatedThumb[i];relatedTitles[i]=relatedTitles[index];relatedUrls[i]=relatedUrls[index];relatedpSummary[i]=relatedpSummary[index];relatedThumb[i]=relatedThumb[index];relatedTitles[index]=tempTitle;relatedUrls[index]=tempUrls;relatedpSummary[index]=tempResum;relatedThumb[index]=tempImage}var somePosts=0;var r=Math.floor((relatedTitles.length-1)*Math.random());var relsump=r;var output;var dirURL=document.URL;while(somePosts<relatedPostsNum){if(relatedUrls[r]!=dirURL){output="<div class='related-post'>";output+="<div class='rpimg'><a href='"+relatedUrls[r]+"' rel='nofollow'  target='_self' title='"+relatedTitles[r]+"'><img src='"+relatedThumb[r]+"' /></a></div>";output+="<h4><a href='"+relatedUrls[r]+"' target='_self' title='"+relatedTitles[r]+"'>"+relatedTitles[r]+"</a></h4>";output+="<p>"+relatedpSummary[r]+" ... </p>";output+="</div>";document.write(output);somePosts++;if(somePosts==relatedPostsNum){break}}if(r<relatedTitles.length-1){r++}else{r=0}if(r==relsump){break}}}function removetags(text,length){var pSummary=text.split("<");for(var i=0;i<pSummary.length;i++){if(pSummary[i].indexOf(">")!=-1){pSummary[i]=pSummary[i].substring(pSummary[i].indexOf(">")+1,pSummary[i].length)}}pSummary=pSummary.join("");pSummary=pSummary.substring(0,length-1);return pSummary}function contains(a,e){for(var j=0;j<a.length;j++){if(a[j]==e){return true}}return false};
-      //]]>
-    </script>
-  
-    <script>
-      jQuery(document).ready(function() {
-        var offset = 220;
-        var duration = 500;
-        jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() &gt; offset) {
-            jQuery(&#39;.back-to-top&#39;).fadeIn(duration);
+    #my-work {
+      margin-top: 20vh;
+      background-color: #000;
+      color: #fff;
+      padding: 24px;
+      border-radius: 20px;
+    }
+  </style>
+  <script type='text/javascript'>
+    //<![CDATA[
+    var relatedPostsNum = 3; //number of related post
+    var relatedmaxnum = 35; // summary length
+    summary_noimg = 550;// summary length when no image
+    summary_img = 10;// summary length with image
+    //summary
+    function removeHtmlTag(strx, chop) { if (strx.indexOf("<") != -1) { var s = strx.split("<"); for (var i = 0; i < s.length; i++) { if (s[i].indexOf(">") != -1) { s[i] = s[i].substring(s[i].indexOf(">") + 1, s[i].length) } } strx = s.join("") } chop = (chop < strx.length - 1) ? chop : strx.length - 2; while (strx.charAt(chop - 1) != " " && strx.indexOf(" ", chop) != -1) { chop++ } strx = strx.substring(0, chop - 1); return strx + "..." } function createSummaryAndThumb(pID) { var div = document.getElementById(pID); var imgtag = ""; var img = div.getElementsByTagName("img"); var summ = summary_noimg; if (img.length >= 1) { imgtag = ""; summ = summary_img } var summary = imgtag + "<div>" + removeHtmlTag(div.innerHTML, summ) + "</div>"; div.innerHTML = summary };
+    ///related posts
+    var relatedTitles = new Array(); var relatedUrls = new Array(); var relatedpSummary = new Array(); var relatedThumb = new Array(); var relatedTitlesNum = 0; var relatednoimage = ""; function readpostlabels(json) { var entry, postimg, postcontent, cat; for (var i = 0; i < json.feed.entry.length; i++) { entry = json.feed.entry[i]; if (i == json.feed.entry.length) { break } relatedTitles[relatedTitlesNum] = entry.title.$t; postcontent = ""; if ("content" in entry) { postcontent = entry.content.$t } else { if ("summary" in entry) { postcontent = entry.summary.$t } } relatedpSummary[relatedTitlesNum] = removetags(postcontent, relatedmaxnum); if ("media$thumbnail" in entry) { postimg = entry.media$thumbnail.url } else { postimg = relatednoimage } relatedThumb[relatedTitlesNum] = postimg; for (var k = 0; k < entry.link.length; k++) { if (entry.link[k].rel == "alternate") { relatedUrls[relatedTitlesNum] = entry.link[k].href; break } } relatedTitlesNum++ } } function showrelated() { var tmp = new Array(0); var tmp2 = new Array(0); var tmp3 = new Array(0); var tmp4 = new Array(0); for (var i = 0; i < relatedUrls.length; i++) { if (!contains(tmp, relatedUrls[i])) { tmp.length += 1; tmp[tmp.length - 1] = relatedUrls[i]; tmp2.length += 1; tmp2[tmp2.length - 1] = relatedTitles[i]; tmp3.length += 1; tmp3[tmp3.length - 1] = relatedpSummary[i]; tmp4.length += 1; tmp4[tmp4.length - 1] = relatedThumb[i] } } relatedTitles = tmp2; relatedUrls = tmp; relatedpSummary = tmp3; relatedThumb = tmp4; for (var i = 0; i < relatedTitles.length; i++) { var index = Math.floor((relatedTitles.length - 1) * Math.random()); var tempTitle = relatedTitles[i]; var tempUrls = relatedUrls[i]; var tempResum = relatedpSummary[i]; var tempImage = relatedThumb[i]; relatedTitles[i] = relatedTitles[index]; relatedUrls[i] = relatedUrls[index]; relatedpSummary[i] = relatedpSummary[index]; relatedThumb[i] = relatedThumb[index]; relatedTitles[index] = tempTitle; relatedUrls[index] = tempUrls; relatedpSummary[index] = tempResum; relatedThumb[index] = tempImage } var somePosts = 0; var r = Math.floor((relatedTitles.length - 1) * Math.random()); var relsump = r; var output; var dirURL = document.URL; while (somePosts < relatedPostsNum) { if (relatedUrls[r] != dirURL) { output = "<div class='related-post'>"; output += "<div class='rpimg'><a href='" + relatedUrls[r] + "' rel='nofollow'  target='_self' title='" + relatedTitles[r] + "'><img src='" + relatedThumb[r] + "' /></a></div>"; output += "<h4><a href='" + relatedUrls[r] + "' target='_self' title='" + relatedTitles[r] + "'>" + relatedTitles[r] + "</a></h4>"; output += "<p>" + relatedpSummary[r] + " ... </p>"; output += "</div>"; document.write(output); somePosts++; if (somePosts == relatedPostsNum) { break } } if (r < relatedTitles.length - 1) { r++ } else { r = 0 } if (r == relsump) { break } } } function removetags(text, length) { var pSummary = text.split("<"); for (var i = 0; i < pSummary.length; i++) { if (pSummary[i].indexOf(">") != -1) { pSummary[i] = pSummary[i].substring(pSummary[i].indexOf(">") + 1, pSummary[i].length) } } pSummary = pSummary.join(""); pSummary = pSummary.substring(0, length - 1); return pSummary } function contains(a, e) { for (var j = 0; j < a.length; j++) { if (a[j] == e) { return true } } return false };
+    //]]>
+  </script>
+
+  <script>
+    jQuery(document).ready(function () {
+      var offset = 220;
+      var duration = 500;
+      jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() & gt; offset) {
+        jQuery(&#39;.back - to - top &#39;).fadeIn(duration);
                    } else {
-                   jQuery(&#39;.back-to-top&#39;).fadeOut(duration);
-                   }
+      jQuery(&#39;.back - to - top &#39;).fadeOut(duration);
+    }
                    });
-            jQuery(&#39;.back-to-top&#39;).click(function(event) {
-                   event.preventDefault();
-            jQuery(&#39;html, body&#39;).animate({scrollTop: 0}, duration);
-                   return false;
+    jQuery(&#39;.back - to - top &#39;).click(function (event) {
+      event.preventDefault();
+      jQuery(&#39; html, body &#39;).animate({ scrollTop: 0 }, duration);
+    return false;
                    })
           });
-    </script>
-  </head>
-  <body>
-    <div id='fb-root'/>
-    <script>
-      //<![CDATA[
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId : 'YOUR_APPLICATION_ID',
-          status : true, // check login status
-          cookie : true, // enable cookies to allow the server to access the session
-          xfbml : true // parse XFBML
-        });
-      };
-      (function() {
-        var e = document.createElement('script');
-        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-        e.async = true;
-        document.getElementById('fb-root').appendChild(e);
-      }());
-      //]]>
-    </script>
+  </script>
+</head>
 
-    <div class='container'>
+<body>
+  <div id='fb-root' />
+  <script>
+    //<![CDATA[
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: 'YOUR_APPLICATION_ID',
+        status: true, // check login status
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: true // parse XFBML
+      });
+    };
+    (function () {
+      var e = document.createElement('script');
+      e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+      e.async = true;
+      document.getElementById('fb-root').appendChild(e);
+    }());
+    //]]>
+  </script>
+
+  <div class='container'>
     <div class='first-footer' style='padding-top:50px;'>
       <div class='social-footer' style='padding-left:5px;'>
-      <ul>
-        <li><a class='social-text-bottom' href='https://github.com/eneseray' target='_blank'>Github</a></li>
-        <li><a class='social-text-bottom' href='http://www.instagram.com/enes.eray' target='_blank'>Instagram</a></li>
-        <li><a class='social-text-bottom' href='https://twitter.com/heyeneseray' target='_blank'>Twitter</a></li>
-        <li><a class='social-text-bottom' href='https://www.linkedin.com/in/enes-eray' target='_blank'>Linkedin</a></li>
-        <li><a class='social-text-bottom' href='https://eneseray.medium.com/' target='_blank'>Medium</a></li>
-      </ul>
-   </div>
-  </div>
+        <ul>
+          <li><a class='social-text-bottom' href='https://github.com/eneseray' target='_blank'>Github</a></li>
+          <li><a class='social-text-bottom' href='http://www.instagram.com/enes.eray' target='_blank'>Instagram</a></li>
+          <li><a class='social-text-bottom' href='https://twitter.com/heyeneseray' target='_blank'>Twitter</a></li>
+          <li><a class='social-text-bottom' href='https://www.linkedin.com/in/enes-eray' target='_blank'>Linkedin</a>
+          </li>
+          <li><a class='social-text-bottom' href='https://eneseray.medium.com/' target='_blank'>Medium</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <b:section id="content-section" class="content-section" showaddelement="yes"></b:section>
-    <div id='main-content'>
-      <div class='container-fluid'>
-          <div class='section-content' id='about'>
-           
-            <!-- Amdin Portfolio --> 
-            <div class='container'>
-              <div class='col-md-9'>
-                <p style='font-family: Poppins; font-size:21px; margin-top: 70px;'>
-                  <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px;'>👋 Hey! It's Enes.</span>
-					<br>
-                </br>
-                I've been developing mobile applications since my childhood years. This journey started with C++, keeps going with developing <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>mobile applications.</span>	
-                <br>
+  <div id='main-content'>
+    <div class='container-fluid'>
+      <div class='section-content' id='about'>
+
+        <!-- Amdin Portfolio -->
+        <div class='container'>
+          <div class='col-md-9'>
+            <p style='font-family: Poppins; font-size:21px; margin-top: 70px;'>
+              <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px;'>👋
+                Hey! It's Enes.</span>
+              <br>
               </br>
-                 My passion for developing applications for both <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>Android</span> and <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>iOS</span> brought me so much experience in Java/Kotlin and Swift languages. After 7 years of experience in mobile development, I've been working as a <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>freelancer</span> for 4 years.			
-                
-                    <br>
-                  	</br>
-                    Also I am a <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>digital nomad</span>
-                    traveling to various countries while working on <span style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>indie</span> 
-                    digital products with a small team.
-                    <br>
-                  	</br>
-                    You can contact me at <a href="mailto:enes@eneseray.com" style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>enes@eneseray.com <i>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
-                      <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
-                      <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
-                    </svg>
-                </i></a> <i> or </i> <a target="_blank" href="https://cal.com/eneseray/30min" style='font-weight:bold; color:#363636; font-family: Poppins;'>Book a meeting <i>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
-                      <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
-                      <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
-                    </svg>
+              I've been developing mobile applications since my childhood years. This journey started with C++, keeps
+              going with developing <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>mobile
+                applications.</span>
+              <br>
+              </br>
+              My passion for developing applications for both <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>Android</span>
+              and <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>iOS</span>
+              brought me so much experience in Java/Kotlin and Swift languages. After 7 years of experience in mobile
+              development, I've been working as a <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>freelancer</span>
+              for 4 years.
+
+              <br>
+              </br>
+              Also I am a <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>digital
+                nomad</span>
+              traveling to various countries while working on <span
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>indie</span>
+              digital products with a small team.
+              <br>
+              </br>
+              You can contact me at <a href="mailto:enes@eneseray.com"
+                style='font-weight:bold; color:#363636; font-family: Poppins; font-size:21px; padding-left: 0px; top:0px;'>enes@eneseray.com
+                <i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
+                  </svg>
+                </i></a> <i> or </i> <a target="_blank" href="https://cal.com/eneseray/30min"
+                style='font-weight:bold; color:#363636; font-family: Poppins;'>Book a meeting <i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#030303" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#030303" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#030303" stroke-linecap="square" />
+                  </svg>
                 </i></a>
-                </p>
+            </p>
 
-                <div class="buttonContainer">
-                <a href="#my-work" class="see-my-work-btn">See My Work</a>
-              </div>
-              </div>
-              <div class='col-md-3' style="margin-top: 100px;">
-                <div class='wrp'>
-                  <img src='https://blogger.googleusercontent.com/img/a/AVvXsEgGA1JwB3XPZiI2jVDgUhNO7ASwlioXPYVZ89xaGoYF4Y9u2r9yphbreFKEYt_mVd_TF37jD-AmBzM0EUPO0gWnDt1uMRI_O75woMorVZ8PEUQZS0o18J_bB3hzXQFUw2HKJ3QK8oO6M_sAyLRO0eoqIrP4Y71BUpm4a9wVvAnfAFFj6fHajev-cBrq_Q=s2048' 
-                  style='border-radius: 50%; width: 100%; max-width: 350px; height: 100%; max-height: 350px;'/>
-
-                  
-                </div>
-              </div>
+            <div class="buttonContainer">
+              <a href="#my-work" class="see-my-work-btn">See My Work</a>
             </div>
-            <!-- Amdin Portfolio [end] --> 
+          </div>
+          <div class='col-md-3' style="margin-top: 100px;">
+            <div class='wrp'>
+              <img
+                src='https://blogger.googleusercontent.com/img/a/AVvXsEgGA1JwB3XPZiI2jVDgUhNO7ASwlioXPYVZ89xaGoYF4Y9u2r9yphbreFKEYt_mVd_TF37jD-AmBzM0EUPO0gWnDt1uMRI_O75woMorVZ8PEUQZS0o18J_bB3hzXQFUw2HKJ3QK8oO6M_sAyLRO0eoqIrP4Y71BUpm4a9wVvAnfAFFj6fHajev-cBrq_Q=s2048'
+                style='border-radius: 50%; width: 100%; max-width: 350px; height: 100%; max-height: 350px;' />
 
-            <div id="my-work">
-                <h2>My Work</h2>
-                <p>Here is some of my work...</p>
-                <div class="photos-container">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png" 
-                alt="Photo 1"/>
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png" 
-                alt="Photo 2"/>
-              </div>
-           </div>
-      
-</div>
-</div>
-</div>
-       
 
-  </body>
+            </div>
+          </div>
+        </div>
+        <!-- Amdin Portfolio [end] -->
+
+        <div id="my-work">
+          <h2>My Work</h2>
+          <p>Here is some of my work...</p>
+          <div class="photos-container">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
+              alt="Photo 1" />
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
+              alt="Photo 2" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
 </html>
