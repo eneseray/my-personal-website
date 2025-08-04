@@ -541,7 +541,7 @@ padding-left: 0 !important;
 .social-text-bottom::before {
   content:'';
   position: absolute;
-  width: 25%;
+  width: 15px;
   height: 2px;
   bottom: 0;
   background-color: white;
@@ -843,6 +843,55 @@ padding-left: 0 !important;
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/* Animated arrow styles */
+.scroll-down {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+}
+
+.scroll-down a {
+    color: white;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+.arrow-down {
+    font-size: 24px;
+    animation: bounce 2s infinite;
+    display: block;
+    margin-bottom: 8px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.scroll-down a:hover {
+    color: #cccccc;
+}
+
+.scroll-down.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
   </style>
 </head>
 
@@ -889,11 +938,70 @@ padding-left: 0 !important;
         <!-- Amdin Portfolio -->
         <div class='container'>
           <div class='col-md-9'>
-            <p style='font-family: "DM Sans", sans-serif; font-size:25px; margin-top: 20px;'>
-              <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:31px; padding-left: 0px;'>👋
-                Hey! It's Enes.</span>
+            <p style='font-family: "DM Sans", sans-serif; font-size:35px; margin-top: 20px;'>
+              <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:40px; padding-left: 0px;'>
+                👋 Hey! It's Enes.</span>
               <br>
               </br>
+              <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:30px; padding-left: 0px; top:0px;'>
+              Your trusted freelance partner for <br></br>
+              crafting exceptional
+                </span>
+              <span style='background-color: white; color: black; padding: 4px 8px; 
+              border-radius: 4px; font-weight: bold; font-size:30px; top:-2px;'>
+                software products.</span>
+               <br>
+              </br>
+
+              <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>
+              I create mobile applications, websites and AI integrations for<br></br>
+               8+ years from 0 -> 1.
+              </span>
+
+              <br>
+              </br>
+              
+              <a href="mailto:enes@eneseray.com" style='
+                display: inline-block;
+                background-color: white;
+                color: black;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-right: 15px;
+                transition: background-color 0.3s ease;
+              '>Email Me</a>
+              
+              <a href="https://cal.com/eneseray/30min" style='
+                display: inline-block;
+                background-color: white;
+                color: black;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+                transition: background-color 0.3s ease;
+              '>Book a Call</a>
+
+              <div class="scroll-down">
+                <a href="#my-work">
+                  <span class="arrow-down">↓</span>
+                  view my work
+                </a>
+              </div>
+
+              <br>
+              </br>
+ <!--
               I've been developing mobile applications since my childhood years. This journey started with C++, keeps
               going with developing <span
                 style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>mobile
@@ -919,6 +1027,7 @@ padding-left: 0 !important;
               digital products with a small team.
               <br>
               </br>
+
               You can contact me at <a href="mailto:enes@eneseray.com"
                 style='font-weight:bold; color: white; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>enes@eneseray.com<i>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -935,6 +1044,7 @@ padding-left: 0 !important;
                     <path d="M15 5L4.16667 15.8333" stroke="#ffffff" stroke-linecap="square" />
                   </svg>
                 </i></a>
+                -->
             </p>
 
           </div>
@@ -953,7 +1063,7 @@ padding-left: 0 !important;
         <div id="my-work">
 
           <div style="display:flex; flex-wrap: wrap; align-items: center;">
-            <h1 style="margin-right: 10px;">Top-notch app development. </h1>
+            <h1 style="margin-right: 10px;">Top-notch software development. </h1>
             <h1 style="color:#bebebe;">My passion.</h1>
             </div> 
 
@@ -980,6 +1090,20 @@ padding-left: 0 !important;
     </div>
   </div>
 
+<script>
+// Hide scroll down arrow when user scrolls down
+window.addEventListener('scroll', function() {
+    const scrollDown = document.querySelector('.scroll-down');
+    const scrollPosition = window.scrollY;
+    
+    // Hide arrow after scrolling 200px down
+    if (scrollPosition > 200) {
+        scrollDown.classList.add('hidden');
+    } else {
+        scrollDown.classList.remove('hidden');
+    }
+});
+</script>
 
 </body>
 
