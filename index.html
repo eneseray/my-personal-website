@@ -892,6 +892,17 @@ padding-left: 0 !important;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+/* Profile photo hover animation */
+.profile-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
   </style>
 </head>
 
@@ -1051,6 +1062,7 @@ padding-left: 0 !important;
           <div class='col-md-3' style="margin-top: 100px; padding-left: 35px;">
             <div class='wrp'>
               <img
+                class="profile-photo"
                 src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQiPGfKR4nFDCmnyCuICjlc2WRTeCIccbQ6Ns_N4cuKBCtkDf3WizPNvVlX6e7CcIvhyphenhyphen6UtQQrgSAdZ-wNHM_Id8TSdHXdpzt_65Rme4JzRHUjMrM3wA07kEsTkfYbqU3QvUPeQYzWSCFEsEyAHXCgQikJwcq0VVcNy26xupKbppikT7mSyD0EJpfX4qhU/s1080/eneseray.jpg'
                 style='border-radius: 50%; width: auto; max-width: 300px; height: auto; max-height: 300px; aspect-ratio: 1;' />
 
