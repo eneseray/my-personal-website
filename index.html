@@ -1037,6 +1037,29 @@ padding-left: 0 !important;
         margin-top: 0 !important;
     }
 }
+
+/* Waving hand animation */
+.waving-hand {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding-left: 0px !important;
+    font-size: 1.3em !important;
+}
+
+.waving-hand:hover {
+    animation: wave 0.6s ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+}
   </style>
 </head>
 
@@ -1085,8 +1108,8 @@ padding-left: 0 !important;
           <div class='row' style='width: 100%; align-items: center;'>
             <div class='col-md-8' style='text-align: left; padding-right: 50px;'>
               <p style='font-family: "DM Sans", sans-serif; font-size:35px; margin-top: 0px; color: #000000;'>
-              <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:40px; padding-left: 0px; color: #000000;'>
-                👋 Hey! It's Enes.</span>
+                             <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:36px; padding-left: 0px; color: #000000;'>
+                 <span class="waving-hand">👋</span> Hey! It's Enes.</span>
               <br>
               </br>
               <span
