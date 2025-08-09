@@ -15,7 +15,7 @@
   <link href='https://twitter.com/heyeneseray' rel='publisher' />
   <link href='https://twitter.com/heyeneseray' rel='author' />
   <link href='https://twitter.com/heyeneseray' rel='me' />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&#38;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
   <meta content='Turkey' name='geo.placename' />
   <!--########### SEO Titles ########### -->
@@ -1060,6 +1060,50 @@ padding-left: 0 !important;
     50% { transform: rotate(10deg); }
     60% { transform: rotate(0deg); }
 }
+
+/* Collaboration Section Responsive Styles */
+@media (max-width: 768px) {
+    #collaboration-section {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        padding: 40px 15px !important;
+        max-width: 500px !important;
+    }
+    
+    #collaboration-section h2 {
+        font-size: 36px !important;
+        line-height: 1.3 !important;
+    }
+    
+    #collaboration-section p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    #collaboration-section .button-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+    
+    #collaboration-section a {
+        width: 200px !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #collaboration-section h2 {
+        font-size: 28px !important;
+    }
+    
+    #collaboration-section {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 30px 10px !important;
+        max-width: 400px !important;
+    }
+}
   </style>
 </head>
 
@@ -1261,6 +1305,138 @@ padding-left: 0 !important;
               alt="Insta Saver" />
           </div>
         </div>
+
+        <!-- Collaboration Section -->
+        <div id="collaboration-section" style="
+          background-color: #f8f9fa;
+          padding: 50px 20px;
+          text-align: center;
+          margin-top: 60px;
+          border-radius: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 600px;
+        ">
+          <!-- Calendar Icon -->
+          <div style="
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            margin: 0 auto 25px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+          ">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="white" stroke-width="2" fill="none"/>
+              <line x1="16" y1="2" x2="16" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="8" y1="2" x2="8" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="3" y1="10" x2="21" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <rect x="7" y="14" width="3" height="3" fill="white" rx="1"/>
+            </svg>
+            <!-- Small decorative elements -->
+            <div style="
+              position: absolute;
+              top: -6px;
+              right: -6px;
+              width: 16px;
+              height: 16px;
+              background: #ffd700;
+              border-radius: 50%;
+              border: 2px solid white;
+            "></div>
+          </div>
+
+          <!-- Main Heading -->
+          <h2 style="
+            font-family: 'DM Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          ">Let's build something awesome together</h2>
+
+          <!-- Description -->
+          <p style="
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            color: #6b7280;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto 35px auto;
+            font-weight: 400;
+          ">I'm excited to hear about what you're building. Reach out below to get the ball rolling, and potentially build something really special together.</p>
+
+          <!-- Action Buttons -->
+          <div class="button-container" style="
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+          ">
+            <a href="mailto:enes@eneseray.com" style="
+              background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+              color: white;
+              padding: 16px 32px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+              min-width: 140px;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(79, 70, 229, 0.4)'"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(79, 70, 229, 0.3)'">
+              Reach out
+            </a>
+
+            <a href="https://cal.com/eneseray/30min" target="_blank" style="
+              background: #e5e7eb;
+              color: #374151;
+              padding: 16px 32px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              min-width: 140px;
+            " onmouseover="this.style.background='#d1d5db'; this.style.transform='translateY(-2px)'"
+               onmouseout="this.style.background='#e5e7eb'; this.style.transform='translateY(0)'">
+              Book a call
+            </a>
+          </div>
+        </div>
+        <!-- End Collaboration Section -->
+
+        <!-- Signature Section -->
+        <div style="
+          text-align: center;
+          margin-top: 80px;
+          margin-bottom: 60px;
+          padding: 0 20px;
+        ">
+          <p style="
+            font-family: 'Caveat', cursive;
+            font-size: 32px;
+            color: #6b7280;
+            margin: 0;
+            line-height: 1.4;
+            font-weight: 400;
+          ">Best,<br/>Enes Eray</p>
+        </div>
+        <!-- End Signature Section -->
 
       </div>
     </div>
